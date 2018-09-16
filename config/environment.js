@@ -4,6 +4,19 @@ module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'scoutlog',
     environment,
+    contentSecurityPolicy: {
+      'script-src': "'self' 'unsafe-eval' apis.google.com",
+      'frame-src': "'self' https://*.firebaseapp.com",
+      'connect-src': "'self' wss://*.firebaseio.com https://*.googleapis.com"
+    },
+    firebase: {
+      apiKey: "AIzaSyDDWagFNpqU2IvK4MZ58EkagPkeyubJHtA",
+      authDomain: "scout-logs.firebaseapp.com",
+      databaseURL: "https://scout-logs.firebaseio.com",
+      projectId: "scout-logs",
+      storageBucket: "",
+      messagingSenderId: "621156998023"
+    },
     rootURL: '/',
     locationType: 'auto',
     EmberENV: {

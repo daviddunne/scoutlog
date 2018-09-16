@@ -1,0 +1,18 @@
+
+<div style="margin-top: 100px">
+  <h1>Camping Logs</h1>
+
+  {{outlet}}
+
+  {{#each model as |log|}}
+    <div class="card card-block bg-faded" style="margin-bottom: 5px;">
+      <div class="card card-body bg-light">
+        <h2>
+          {{log.title}}
+        </h2>
+        <small>{{log.date}}</small>
+        <h5>{{log.location}}</h5>
+      </div>
+    </div>
+  {{/each}}
+</div>
