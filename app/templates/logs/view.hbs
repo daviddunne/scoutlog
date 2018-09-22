@@ -1,0 +1,37 @@
+<div class="card" style="margin-bottom:50px;">
+  <img class="card-img-top" src="{{model.src}}" alt="Card image">
+  <div class="card-body">
+    <h4 class="card-title">{{model.title}}</h4>
+    <small>{{model.date}}</small>
+
+    <div class="table-responsive">
+      <table class="table">
+        <tr class="d-flex">
+          <th class="col-3">Weather:</th>
+          <td class="col-9">{{model.weather}}</td>
+        </tr>
+        <tr class="d-flex">
+          <th class="col-3">Location:</th>
+          <td class="col-9">{{model.location}}</td>
+        </tr>
+        <tr class="d-flex">
+          <th class="col-3">Patrol(s):</th>
+          <td class="col-9">{{model.patrols}}</td>
+        </tr>
+        <tr class="d-flex">
+          <th class="col-3">Patrol Leader(s):</th>
+          <td class="col-9">{{model.patrol_leaders}}</td>
+        </tr>
+        <tr class="d-flex">
+          <th class="col-3">Attendees:</th>
+          <td class="col-9">{{model.attendees}}</td>
+        </tr>
+        <tr class="d-flex">
+          <th class="col-3">Notes:</th>
+          <td class="col-9">{{model.notes}}</td>
+        </tr>
+      </table>
+    </div>
+    {{#link-to 'logs.edit' log.id tagName='button' class='btn btn-warning'}}Edit Log{{/link-to}}
+  </div>
+</div>

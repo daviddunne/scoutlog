@@ -3,16 +3,18 @@
   <h1>Camping Logs</h1>
 
   {{outlet}}
-
-  {{#each model as |log|}}
-    <div class="card card-block bg-faded" style="margin-bottom: 5px;">
-      <div class="card card-body bg-light">
-        <h2>
-          {{log.title}}
-        </h2>
-        <small>{{log.date}}</small>
-        <h5>{{log.location}}</h5>
+  <div class="row">
+    {{#each model as |log|}}
+      <div class="col-sm-6" style="margin-bottom: 5px;">
+        <div class="card card-body bg-light">
+          <h5 class="card-title">
+            {{log.title}}
+          </h5>
+          <small>{{log.date}}</small>
+          <p class="card-text">{{log.location}}</p>
+          {{#link-to 'logs.view' log.id tagName='button' class='btn btn-info'}}View{{/link-to}}
+        </div>
       </div>
-    </div>
-  {{/each}}
+    {{/each}}
+  </div>
 </div>

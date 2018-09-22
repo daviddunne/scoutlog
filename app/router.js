@@ -9,6 +9,7 @@ const Router = EmberRouter.extend({
 Router.map(function() {
   this.route('logs', function() {
     this.route('new');
+    this.route('view', {path: '/view/:log_id'});
   });
 });
 

@@ -7,7 +7,6 @@ export default Controller.extend({
 });
 
 function createLog(){
-  alert(this.get('location'));
   var title = this.get('title');
   var date = this.get('date');
   var location = this.get('location');
