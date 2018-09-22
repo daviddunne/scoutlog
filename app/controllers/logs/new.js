@@ -12,7 +12,7 @@ function createLog(){
   var location = this.get('location');
   var patrols = this.get('patrols');
   var patrol_leaders = this.get('patrol_leaders');
-  var atendees = this.get('attendees');
+  var attendees = this.get('attendees');
   var weather = this.get('weather');
   var notes = this.get('notes');
 
@@ -23,7 +23,7 @@ function createLog(){
     location: location,
     patrols: patrols,
     patrol_leaders: patrol_leaders,
-    atendees: atendees,
+    attendees: attendees,
     weather: weather,
     notes: notes
   });
@@ -38,7 +38,7 @@ function createLog(){
     location: '',
     patrols: '',
     patrol_leaders: '',
-    atendees: '',
+    attendees: '',
     weather: '',
     notes: ''
   });

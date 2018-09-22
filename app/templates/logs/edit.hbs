@@ -1,0 +1,35 @@
+<form style="margin-top: 50px; margin-bottom: 50px;">
+    <div class="form-group">
+        <label>Title</label>
+        {{input type="text" id="title" class="form-control" placeholder="Add a Title for log entry" value=model.title}}
+    </div>
+    <div class="form-group">
+        <label>Date</label>
+        {{input type="date" id="date" class="form-control" value=model.date}}
+    </div>
+    <div class="form-group">
+       <label>Location:</label>
+       {{input type="text" id="location" class="form-control" placeholder="Add location" value=model.location}}
+   </div>
+     <div class="form-group">
+        <label>Patrol(s):</label>
+        {{input type="text" id="patrols" class="form-control" placeholder="Add Patrol(s) name(s)" value=model.patrols}}
+    </div>
+    <div class="form-group">
+        <label>Patrol Leader(s)</label>
+        {{input type="text" id="patrol_leaders" class="form-control" placeholder="Add Patrol Leader(s) name(s)" value=model.patrol_leaders}}
+    </div>
+    <div class="form-group">
+        <label>Attendees</label>
+        {{input type="text" id="attendees" class="form-control" placeholder="Add names of those in attendence" value=model.attendees}}
+    </div>
+    <div class="form-group">
+        <label>Weather</label>
+        {{input type="text" id="weather" class="form-control" placeholder="Add notes about the weather" value=model.weather}}
+    </div>
+    <div class="form-group">
+        <label>Notes</label>
+        {{textarea id="notes" class="form-control" placeholder="Add some notes about the event" value=model.notes}}
+    </div>
+    <button {{action 'editLog' model.id}} id="new_log_button" class="btn btn-success">Save</button>
+</form>

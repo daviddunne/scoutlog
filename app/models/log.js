@@ -6,7 +6,7 @@ export default DS.Model.extend({
   location: DS.attr('string'),
   patrols: DS.attr('string'),
   patrol_leaders: DS.attr('string'),
-  atendees: DS.attr('string'),
+  attendees: DS.attr('string'),
   weather: DS.attr('string'),
   notes: DS.attr('string'),
   created: DS.attr('string', {

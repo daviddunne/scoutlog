@@ -12,7 +12,10 @@
           </h5>
           <small>{{log.date}}</small>
           <p class="card-text">{{log.location}}</p>
-          {{#link-to 'logs.view' log.id tagName='button' class='btn btn-info'}}View{{/link-to}}
+          <p class = "tpbutton btn-toolbar text-center">
+            {{#link-to 'logs.view' log.id tagName='button' class='btn navbar-btn btn-info'}}View Task{{/link-to}}
+            {{#link-to 'logs.edit' log.id tagName='button' class='btn navbar-btn btn-warning'}}Edit Task{{/link-to}}
+          </p>
         </div>
       </div>
     {{/each}}
